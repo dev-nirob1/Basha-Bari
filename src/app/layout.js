@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "BashaBari",
-  description: "",
+  title: "BashaBari - Modern Real Estate",
+  description: "Find your dream home with BashaBari. Browse the latest rental properties in your area.",
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-white text-gray-900 dark:bg-zinc-950 dark:text-gray-100 transition-colors duration-300">
+        <Navbar />
+        <main className="flex-1 w-full max-w-7xl mx-auto">{children}</main>
+      </body>
     </html>
   );
 }
