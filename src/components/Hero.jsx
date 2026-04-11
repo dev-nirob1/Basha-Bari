@@ -1,14 +1,17 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center pt-24">
       {/* Background Image Wrapper */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80')",
-        }}
-      >
+      <div className="absolute inset-0 z-0">
+        <Image 
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80"
+          alt="Luxury modern home exterior"
+          fill
+          priority
+          className="object-cover"
+        />
         {/* Soft Dark Vignette Overlay for moody aesthetic */}
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/60 via-zinc-900/40 to-zinc-900/80"></div>
       </div>
