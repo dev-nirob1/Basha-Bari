@@ -4,7 +4,7 @@ export default function PropertySidebar({ property }) {
   if (!property) return null;
 
   return (
-    <div className="w-full lg:w-96 shrink-0 lg:sticky lg:top-32 space-y-6">
+    <div className="w-full lg:w-96 shrink-0 lg:sticky lg:top-32 lg:max-h-[calc(100vh-theme(spacing.40))] lg:overflow-y-auto lg:pr-2 custom-scrollbar space-y-6">
       <div className="bg-white border border-zinc-200 p-8 shadow-xl shadow-zinc-200/40">
         <p className="text-3xl font-bold text-zinc-950 mb-1">
           ${property.price.toLocaleString()}

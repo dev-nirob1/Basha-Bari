@@ -4,6 +4,9 @@ import PropertyHeader from "@/components/property/details/PropertyHeader";
 import PropertySpecs from "@/components/property/details/PropertySpecs";
 import PropertyDescription from "@/components/property/details/PropertyDescription";
 import PropertyAmenities from "@/components/property/details/PropertyAmenities";
+import PropertyPolicies from "@/components/property/details/PropertyPolicies";
+import NearbyPlaces from "@/components/property/details/NearbyPlaces";
+import FloorPlan from "@/components/property/details/FloorPlan";
 import PropertyMap from "@/components/property/details/PropertyMap";
 import PropertySidebar from "@/components/property/details/PropertySidebar";
 import SimilarProperties from "@/components/property/details/SimilarProperties";
@@ -15,6 +18,7 @@ const PROPERTY = {
   location: "Gulshan 2, Dhaka",
   price: 150000,
   status: "Available now",
+  listedAt: "Oct 12, 2023",
   specs: {
     beds: 4,
     baths: 4,
@@ -32,6 +36,29 @@ const PROPERTY = {
     "Private Garden",
     "Smart Home System",
   ],
+  policies: [
+    { label: "Security Deposit", value: "3 Months Rent (Refundable)" },
+    { label: "Notice Period", value: "2 Months in Advance" },
+    { label: "Pet Policy", value: "Small pets allowed (Subject to approval)" },
+    { label: "Smoking Policy", value: "Not allowed inside the premises" },
+  ],
+  nearby: [
+    { name: "United Hospital", type: "Health", distance: "1.2 km", time: "5 min drive" },
+    { name: "Westin Dhaka", type: "Hotel", distance: "0.5 km", time: "3 min walk" },
+    { name: "American International School", type: "Education", distance: "2.1 km", time: "8 min drive" },
+    { name: "Unimart Gulshan", type: "Shopping", distance: "0.8 km", time: "5 min walk" },
+  ],
+  floorPlan: {
+    image: "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=1200",
+    rooms: [
+      { label: "Master Bedroom", dimensions: "16' x 18'", area: "288" },
+      { label: "Living Area", dimensions: "24' x 20'", area: "480" },
+      { label: "Kitchen", dimensions: "12' x 14'", area: "168" },
+      { label: "Guest Suite", dimensions: "14' x 15'", area: "210" },
+      { label: "Dining Hall", dimensions: "18' x 16'", area: "288" },
+      { label: "Balcony", dimensions: "12' x 6'", area: "72" },
+    ]
+  },
   images: [
     "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1920",
     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
@@ -109,6 +136,15 @@ export default function PropertyDetailsPage() {
 
             {/* SECTION 5: AMENITIES */}
             <PropertyAmenities amenities={PROPERTY.amenities} />
+
+            {/* SECTION 10: FLOOR PLAN */}
+            <FloorPlan floorPlan={PROPERTY.floorPlan} />
+
+            {/* SECTION 11: POLICIES */}
+            <PropertyPolicies policies={PROPERTY.policies} />
+
+            {/* SECTION 12: NEARBY PLACES */}
+            <NearbyPlaces places={PROPERTY.nearby} />
 
             {/* SECTION 6: MAP */}
             <PropertyMap />
