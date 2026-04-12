@@ -1,6 +1,6 @@
 import Link from "next/link";
-import PropertyCard from "./PropertyCard";
-import SectionHeader from "./SectionHeader";
+import PropertyCard from "@/components/property/PropertyCard";
+import SectionHeader from "@/components/ui/SectionHeader";
 
 // Using real high-quality real estate mock imagery from Unsplash for realistic SaaS look
 const MOCK_PROPERTIES = [

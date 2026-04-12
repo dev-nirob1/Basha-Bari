@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "@/components/ui/SectionHeader";
 import TestimonialCard from "./TestimonialCard";
 
 const TESTIMONIALS = [

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "@/components/ui/SectionHeader";
 
 const CATEGORIES = [
   {
