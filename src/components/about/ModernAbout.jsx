@@ -14,7 +14,7 @@ export default function ModernAbout() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* LEFT SIDE: Content Area */}
-          <div className="flex flex-col items-start ">
+          <div className="flex flex-col items-start">
             <h2 className="text-4xl md:text-5xl font-bold text-zinc-950 tracking-tight mb-8">
               Helping people find the perfect place to live.
             </h2>
