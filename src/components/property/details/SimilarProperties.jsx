@@ -7,7 +7,7 @@ export default function SimilarProperties({ properties }) {
   return (
     <div className="mt-24">
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-3xl font-bold text-zinc-950 tracking-tight">Similar Properties</h2>
+        <h2 className="text-3xl font-bold text-zinc-950 tracking-tight font-display uppercase tracking-tight">Similar Properties</h2>
         <Link href="/properties" className="hidden sm:block text-emerald-700 font-medium hover:text-emerald-800 transition-colors">
           View all listings &rarr;
         </Link>

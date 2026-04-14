@@ -10,6 +10,7 @@ import FloorPlan from "@/components/property/details/FloorPlan";
 import PropertyMap from "@/components/property/details/PropertyMap";
 import PropertySidebar from "@/components/property/details/PropertySidebar";
 import SimilarProperties from "@/components/property/details/SimilarProperties";
+import CTASection from "@/components/shared/CTASection";
 
 // Mock data for a single property
 const PROPERTY = {
@@ -157,6 +158,9 @@ export default function PropertyDetailsPage() {
 
         {/* SECTION 9: SIMILAR PROPERTIES */}
         <SimilarProperties properties={SIMILAR_PROPERTIES} />
+
+        {/* CTA Section */}
+        <CTASection />
 
       </div>
     </div>

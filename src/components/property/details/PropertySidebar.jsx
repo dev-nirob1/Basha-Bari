@@ -5,8 +5,8 @@ export default function PropertySidebar({ property }) {
 
   return (
     <div className="w-full lg:w-96 shrink-0 lg:sticky lg:top-32 lg:max-h-[calc(100vh-theme(spacing.40))] lg:overflow-y-auto lg:pr-2 custom-scrollbar space-y-6">
-      <div className="bg-white border border-zinc-200 p-8 shadow-xl shadow-zinc-200/40">
-        <p className="text-3xl font-bold text-zinc-950 mb-1">
+      <div className="bg-white border border-zinc-200 p-8 shadow-xl shadow-zinc-200/40 text-center">
+        <p className="text-4xl font-bold text-zinc-950 mb-1">
           ${property.price.toLocaleString()}
           <span className="text-base font-normal text-zinc-500 ml-1">/ month</span>
         </p>
@@ -22,7 +22,7 @@ export default function PropertySidebar({ property }) {
         </div>
 
         {/* OWNER CARD */}
-        <div className="mt-8 pt-8 border-t border-zinc-100 flex items-center gap-4">
+        <div className="mt-8 pt-8 border-t border-zinc-100 flex items-center gap-4 text-left">
           <div className="relative w-14 h-14 bg-zinc-200 overflow-hidden">
             <Image
               src={property.owner.image}

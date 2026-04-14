@@ -3,6 +3,7 @@ import FeaturedProperties from "@/components/home/FeaturedProperties";
 import BrowseByCategory from "@/components/home/BrowseByCategory";
 import PopularLocations from "@/components/home/PopularLocations";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
+import HomeJournal from "@/components/home/HomeJournal";
 import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <BrowseByCategory />
       <PopularLocations />
       <WhyChooseUs />
+      <HomeJournal />
       <Testimonials />
     </div>
   );

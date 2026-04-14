@@ -2,7 +2,7 @@ export default function PropertyMap() {
   return (
     <div className="pb-8 border-b border-zinc-200">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold text-zinc-950">Location</h2>
+        <h2 className="text-2xl font-bold text-zinc-950 font-display uppercase tracking-tight">Location</h2>
         <a
           href="https://www.google.com/maps/search/?api=1&query=Gulshan+2,+Dhaka"
           target="_blank"

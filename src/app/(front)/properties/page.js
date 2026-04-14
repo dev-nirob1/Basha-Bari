@@ -1,5 +1,6 @@
 import PropertyCard from "@/components/property/PropertyCard";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import CTASection from "@/components/shared/CTASection";
 
 // Mock data based on the PropertyCard props
 const MOCK_PROPERTIES = [
@@ -344,6 +345,10 @@ export default function PropertiesPage() {
             </div>
           </div>
         </div>
+
+        {/* CTA Section */}
+        <CTASection />
+
       </div>
     </div>
   );

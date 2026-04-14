@@ -99,7 +99,7 @@ export default function PropertyGallery({ images, title }) {
               className="p-2 text-white/50 hover:text-white bg-zinc-900/50 backdrop-blur-md rounded-full transition-colors"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="1.5" d="M6 18L18 6M6 6l12 12" />
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
@@ -112,7 +112,7 @@ export default function PropertyGallery({ images, title }) {
               className="absolute left-4 md:left-8 z-10 p-4 bg-zinc-900/50 text-white rounded-full hover:bg-zinc-800 backdrop-blur-md transition-all"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
 
@@ -132,7 +132,7 @@ export default function PropertyGallery({ images, title }) {
               className="absolute right-4 md:right-8 z-10 p-4 bg-zinc-900/50 text-white rounded-full hover:bg-zinc-800 backdrop-blur-md transition-all"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="2" d="M9 5l7 7-7 7" />
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
               </svg>
             </button>
           </div>

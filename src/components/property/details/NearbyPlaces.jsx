@@ -1,5 +1,5 @@
 export default function NearbyPlaces({ places }) {
-  if (!places) return null;
+  if (!places || places.length === 0) return null;
 
   return (
     <div className="pb-8 border-b border-zinc-200">
