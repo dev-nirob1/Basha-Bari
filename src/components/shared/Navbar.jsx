@@ -55,9 +55,12 @@ export default function Navbar() {
 
           {/* Auth Buttons (Desktop) */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <button className="text-xs uppercase tracking-[0.15em] text-white opacity-70 hover:opacity-100 transition-opacity">
+            <Link 
+              href="/login"
+              className="text-xs uppercase tracking-[0.15em] text-white opacity-70 hover:opacity-100 transition-opacity"
+            >
               Sign In
-            </button>
+            </Link>
             <Link 
               href="/dashboard"
               className="text-xs uppercase tracking-[0.15em] text-zinc-950 bg-white px-6 py-3 font-semibold hover:bg-zinc-200 transition-colors duration-300"
@@ -108,9 +111,12 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="pt-6 border-t border-white/10 flex flex-col gap-6">
-             <button className="text-left text-sm tracking-[0.2em] text-white opacity-70 uppercase hover:opacity-100">
+            <Link 
+              href="/login"
+              className="text-left text-sm tracking-[0.2em] text-white opacity-70 uppercase hover:opacity-100"
+            >
               Sign In
-            </button>
+            </Link>
             <Link 
               href="/dashboard"
               className="text-left text-sm tracking-[0.2em] text-white uppercase hover:text-white/60 transition-colors"
