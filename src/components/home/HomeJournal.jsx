@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SectionHeader from "@/components/ui/SectionHeader";
 import ArticleCard from "@/components/journal/ArticleCard";
 
 // Mock articles data for homepage highlight
@@ -37,31 +37,16 @@ const HOME_ARTICLES = [
 
 export default function HomeJournal() {
   return (
-    <section className="py-32 bg-zinc-50 border-y border-zinc-200">
+    <section className="py-20 lg:py-28 bg-zinc-50 border-y border-zinc-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
-          <div className="max-w-2xl">
-            <h2 className="text-sm font-bold text-emerald-700 uppercase tracking-[0.4em] mb-6">The BashaBari Journal</h2>
-            <h3 className="text-4xl md:text-6xl font-black text-zinc-950 tracking-tighter leading-[0.9]">
-              ARCHITECTURAL <br />
-              <span className="text-zinc-400">PERSPECTIVES.</span>
-            </h3>
-          </div>
-          <div className="flex flex-col gap-6">
-            <p className="max-w-xs text-zinc-500 font-light leading-relaxed">
-              Curated stories about modern living, design philosophy, and the evolving soul of Dhaka's finest residences.
-            </p>
-            <Link 
-              href="/journal"
-              className="group flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-zinc-950 hover:text-emerald-700 transition-colors"
-            >
-              Explore the Journal
-              <span className="w-12 h-px bg-zinc-200 group-hover:bg-emerald-700 group-hover:w-16 transition-all"></span>
-            </Link>
-          </div>
-        </div>
+        <SectionHeader 
+          title="Architectural Perspectives"
+          subtitle="The BashaBari Journal"
+          linkText="Explore the Journal"
+          linkHref="/journal"
+        />
 
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

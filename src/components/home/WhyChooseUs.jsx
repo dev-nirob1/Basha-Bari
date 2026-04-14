@@ -46,27 +46,27 @@ const FEATURES = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section className="bg-white py-12 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         <SectionHeader 
           title="Why Choose Us"
-          subtitle="We make finding your next home simple and secure"
+          subtitle="Simple and secure."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {FEATURES.map((feature, index) => (
             <div 
               key={index}
-              className="group flex flex-col p-8 sm:p-10 bg-zinc-50 border border-zinc-200 hover:bg-zinc-950 hover:border-zinc-950 transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-1"
+              className="group flex flex-col p-6 sm:p-8 bg-zinc-50 border border-zinc-200 hover:bg-zinc-950 hover:border-zinc-950 transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-1"
             >
-              <div className="h-14 w-14 mb-8 flex items-center justify-center bg-white border border-zinc-200 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-emerald-400 group-hover:border-zinc-800 transition-colors duration-500">
+              <div className="h-12 w-12 mb-6 flex items-center justify-center bg-white border border-zinc-200 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-emerald-400 group-hover:border-zinc-800 transition-colors duration-500">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-zinc-950 group-hover:text-white mb-3 transition-colors duration-500">
+              <h3 className="text-lg font-bold text-zinc-950 group-hover:text-white mb-2 transition-colors duration-500">
                 {feature.title}
               </h3>
-              <p className="text-sm text-zinc-600 group-hover:text-zinc-400 font-medium leading-relaxed transition-colors duration-500">
+              <p className="text-xs text-zinc-600 group-hover:text-zinc-400 font-medium leading-relaxed transition-colors duration-500">
                 {feature.description}
               </p>
             </div>

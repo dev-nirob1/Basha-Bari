@@ -5,6 +5,7 @@ import PopularLocations from "@/components/home/PopularLocations";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import HomeJournal from "@/components/home/HomeJournal";
 import Testimonials from "@/components/home/Testimonials";
+import CTASection from "@/components/shared/CTASection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyChooseUs />
       <HomeJournal />
       <Testimonials />
+      <CTASection />
     </div>
   );
 }
