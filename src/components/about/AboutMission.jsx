@@ -32,7 +32,7 @@ export default function AboutMission() {
                   src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1200"
                   alt="Team and Vision"
                   fill
-                  className="object-cover grayscale transition-transform duration-700 hover:scale-105"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function AboutMission() {
                   src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&q=80&w=800"
                   alt="Architectural detail"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover"
                 />
               </div>
             </div>

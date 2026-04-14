@@ -69,7 +69,7 @@ export default function AboutHero() {
                 alt="Architectural detail"
                 fill
                 priority
-                className="object-cover grayscale contrast-125"
+                className="object-cover"
               />
               {/* Overlapping metadata box */}
               <div className="absolute -bottom-6 -left-6 bg-zinc-950 text-white p-8 hidden lg:block border border-zinc-800">
@@ -84,7 +84,7 @@ export default function AboutHero() {
 
             {/* Secondary floating image detail for depth */}
             <div className="absolute -top-12 -right-12 w-48 h-64 border border-zinc-200 p-2 bg-white hidden lg:block shadow-2xl">
-              <div className="relative w-full h-full grayscale opacity-80">
+              <div className="relative w-full h-full opacity-100">
                 <Image
                   src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=600"
                   alt="Texture detail"
