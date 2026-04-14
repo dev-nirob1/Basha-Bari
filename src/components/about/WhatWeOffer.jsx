@@ -72,7 +72,6 @@ export default function WhatWeOffer() {
             </div>
           </div>
 
-          {/* RIGHT SIDE: Visual/Image */}
           <div className="relative">
              <div className="relative aspect-[4/5] w-full bg-zinc-100 border border-zinc-200 shadow-2xl group overflow-hidden">
                 <Image 
@@ -81,16 +80,7 @@ export default function WhatWeOffer() {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                
-                {/* Overlay Metadata (Consistent with architectural theme) */}
-                <div className="absolute top-8 left-8 bg-zinc-950/80 backdrop-blur-sm text-white px-6 py-4 border border-zinc-800 hidden md:block">
-                   <p className="text-[10px] uppercase tracking-[0.4em] text-zinc-400 mb-1">Index Reference</p>
-                   <p className="text-lg font-light tracking-tighter uppercase whitespace-nowrap leading-none">BSB-Offer-01</p>
-                </div>
              </div>
-             
-             {/* Decorative Background Offset */}
-             <div className="absolute -bottom-6 -right-6 w-48 h-48 border-b-2 border-r-2 border-zinc-100 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-700"></div>
           </div>
 
         </div>
