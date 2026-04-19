@@ -63,7 +63,7 @@ export default function Navbar() {
             </Link>
             <Link 
               href="/dashboard"
-              className="text-xs uppercase tracking-[0.15em] text-zinc-950 bg-white px-6 py-3 font-semibold hover:bg-emerald-100 hover:text-emerald-900 transition-colors duration-300"
+              className="text-xs uppercase tracking-[0.15em] text-white bg-emerald-500 px-6 py-3 font-semibold hover:bg-emerald-600 transition-colors duration-300"
             >
               Dashboard
             </Link>

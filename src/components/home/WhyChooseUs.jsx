@@ -58,9 +58,9 @@ export default function WhyChooseUs() {
           {FEATURES.map((feature, index) => (
             <div 
               key={index}
-              className="group flex flex-col p-6 sm:p-8 bg-zinc-50 border border-zinc-200 hover:bg-zinc-950 hover:border-zinc-950 transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-1"
+              className="group flex flex-col p-6 sm:p-8 bg-zinc-50 border border-zinc-200 hover:bg-emerald-500 hover:border-emerald-500 transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-1"
             >
-              <div className="h-12 w-12 mb-6 flex items-center justify-center bg-white border border-zinc-200 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-emerald-400 group-hover:border-zinc-800 transition-colors duration-500">
+              <div className="h-12 w-12 mb-6 flex items-center justify-center bg-white border border-zinc-200 text-zinc-900 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 transition-colors duration-500">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-bold text-zinc-950 group-hover:text-white mb-2 transition-colors duration-500">

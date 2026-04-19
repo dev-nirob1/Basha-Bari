@@ -75,7 +75,7 @@ const NAV_GROUPS = {
   ],
 };
 
-export default function Sidebar({ role = "owner", collapsed, onToggle }) {
+export default function Sidebar({ role = "admin", collapsed, onToggle }) {
   const pathname = usePathname();
   const navGroups = NAV_GROUPS[role] || NAV_GROUPS.admin;
 

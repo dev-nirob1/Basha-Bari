@@ -21,7 +21,7 @@ export default function Footer() {
                 className="bg-zinc-900 border border-zinc-800 text-white px-6 py-4 text-xs font-bold tracking-widest focus:outline-none focus:border-emerald-700 min-w-[300px] transition-colors"
                 required
               />
-              <button className="bg-white text-zinc-950 px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-emerald-700 hover:text-white transition-all duration-500">
+              <button className="bg-emerald-500 text-white px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-emerald-600 transition-all duration-500">
                 Subscribe
               </button>
             </form>

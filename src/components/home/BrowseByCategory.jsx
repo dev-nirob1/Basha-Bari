@@ -70,9 +70,9 @@ export default function BrowseByCategory() {
             <Link 
               key={category.type}
               href={`/properties?type=${category.type}`}
-              className="group min-w-[220px] sm:min-w-0 snap-center flex flex-col items-center justify-center p-8 bg-zinc-50 border border-zinc-200 hover:border-zinc-950 hover:bg-zinc-950 transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-1"
+              className="group min-w-[220px] sm:min-w-0 snap-center flex flex-col items-center justify-center p-8 bg-zinc-50 border border-zinc-200 hover:border-emerald-500 hover:bg-emerald-500 transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-1"
             >
-              <div className="h-16 w-16 flex items-center justify-center bg-white border border-zinc-200 text-zinc-900 mb-6 group-hover:bg-zinc-800 group-hover:border-zinc-700 group-hover:text-white transition-colors duration-500">
+              <div className="h-16 w-16 flex items-center justify-center bg-white border border-zinc-200 text-zinc-900 mb-6 group-hover:bg-emerald-600 group-hover:border-emerald-600 group-hover:text-white transition-colors duration-500">
                 {category.icon}
               </div>
               <h3 className="text-xl font-bold text-zinc-950 group-hover:text-white transition-colors duration-500 mb-2">

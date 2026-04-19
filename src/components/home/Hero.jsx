@@ -37,7 +37,7 @@ export default function Hero() {
 
         {/* Unique Architectural Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto items-center justify-center">
-          <button className="cursor-pointer group flex items-center gap-6 bg-white text-zinc-950 px-10 py-5 hover:bg-zinc-200 transition-colors duration-500 min-w-[240px] justify-between">
+          <button className="cursor-pointer group flex items-center gap-6 bg-emerald-500 text-white px-10 py-5 hover:bg-emerald-600 transition-colors duration-500 min-w-[240px] justify-between">
             <span className="uppercase tracking-[0.2em] text-xs font-bold">
               Browse Collection
             </span>
